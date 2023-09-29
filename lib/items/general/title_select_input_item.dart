@@ -8,6 +8,7 @@ import 'package:phoenix_popup/popup_window.dart';
 import '../../base/form_item_type.dart';
 import '../../base/input_item_interface.dart';
 import '../../config/form_config.dart';
+import '../../extension/form_assets.dart';
 import '../../utils/form_util.dart';
 
 ///
@@ -279,9 +280,9 @@ class TitleSelectInputFormItemState extends State<TitleSelectInputFormItem> {
         builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
           return snapshot.data!
               ? PhoenixTools.getAssetImageWithBandColor(
-                  BaseAsset.iconSelectedUpTriangle,
+                  FormAssets.iconSelectedUpTriangle,
                   package: 'phoenix_form')
-              : PhoenixTools.getAssetImage(BaseAsset.iconUnSelectDownTriangle,
+              : PhoenixTools.getAssetImage(FormAssets.iconUnSelectDownTriangle,
                   package: 'phoenix_form');
         },
       ),

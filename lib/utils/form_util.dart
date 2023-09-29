@@ -4,6 +4,7 @@ import 'package:phoenix_base/phoenix.dart';
 import '../base/form_item_type.dart';
 import '../base/input_item_interface.dart';
 import '../config/form_config.dart';
+import '../extension/form_assets.dart';
 
 ///
 /// UI配置相关
@@ -110,10 +111,10 @@ class FormUtil {
   //
   static Widget getPrefixIcon(String type) {
     if (type == PrefixIconType.add) {
-      return PhoenixTools.getAssetImageWithBandColor(BaseAsset.iconAddFormItem,
+      return PhoenixTools.getAssetImageWithBandColor(FormAssets.iconAddFormItem,
           package: 'phoenix_form');
     } else if (type == PrefixIconType.remove) {
-      return PhoenixTools.getAssetImage(BaseAsset.iconRemoveFormItem,
+      return PhoenixTools.getAssetImage(FormAssets.iconRemoveFormItem,
           package: 'phoenix_form');
     } else {
       return Container();
@@ -137,7 +138,7 @@ class FormUtil {
           ? const EdgeInsets.only(right: 2)
           : const EdgeInsets.only(right: 0),
       child: isRequire
-          ? PhoenixTools.getAssetSizeImage(BaseAsset.iconRequireRed, 8, 8,
+          ? PhoenixTools.getAssetSizeImage(FormAssets.iconRequireRed, 8, 8,
               color: const Color(0xFFFA3F3F), package: 'phoenix_form')
           : null,
     );
@@ -146,12 +147,12 @@ class FormUtil {
   /// 视觉同学要求修改右箭头图标
   static Image getRightArrowIcon() {
     return PhoenixTools.getAssetSizeImage(
-        BaseAsset.iconRightArrow, rightArrowSize, rightArrowSize,
+        FormAssets.iconRightArrow, rightArrowSize, rightArrowSize,
         package: 'phoenix_form');
   }
 
   static Image getQuestionMarkIcon() {
-    return PhoenixTools.getAssetImage(BaseAsset.iconQuestion,
+    return PhoenixTools.getAssetImage(FormAssets.iconQuestion,
         package: 'phoenix_form');
   }
 

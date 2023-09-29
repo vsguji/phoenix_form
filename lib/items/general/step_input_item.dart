@@ -6,6 +6,7 @@ import 'package:phoenix_form/extension/form_total_config.dart';
 import '../../base/form_item_type.dart';
 import '../../base/input_item_interface.dart';
 import '../../config/form_config.dart';
+import '../../extension/form_assets.dart';
 import '../../utils/form_util.dart';
 
 ///
@@ -230,16 +231,16 @@ class StepInputFormItemState extends State<StepInputFormItem> {
 
   Image _getAddIcon() {
     if (!widget.isEdit) {
-      return PhoenixTools.getAssetImage(BaseAsset.iconAddDisable,
+      return PhoenixTools.getAssetImage(FormAssets.iconAddDisable,
           package: 'phoenix_form');
     }
 
     if (_isReachMaxLevel()) {
-      return PhoenixTools.getAssetImage(BaseAsset.iconAddDisable,
+      return PhoenixTools.getAssetImage(FormAssets.iconAddDisable,
           package: 'phoenix_form');
     }
 
-    return PhoenixTools.getAssetImage(BaseAsset.iconAddEnable,
+    return PhoenixTools.getAssetImage(FormAssets.iconAddEnable,
         package: 'phoenix_form');
   }
 
@@ -252,16 +253,16 @@ class StepInputFormItemState extends State<StepInputFormItem> {
 
   Image _getMinusIcon() {
     if (!widget.isEdit) {
-      return PhoenixTools.getAssetImage(BaseAsset.iconMinusDisable,
+      return PhoenixTools.getAssetImage(FormAssets.iconMinusDisable,
           package: 'phoenix_form');
     }
 
     if (_isReachMinLevel()) {
-      return PhoenixTools.getAssetImage(BaseAsset.iconMinusDisable,
+      return PhoenixTools.getAssetImage(FormAssets.iconMinusDisable,
           package: 'phoenix_form');
     }
 
-    return PhoenixTools.getAssetImage(BaseAsset.iconMinusEnable,
+    return PhoenixTools.getAssetImage(FormAssets.iconMinusEnable,
         package: 'phoenix_form');
   }
 

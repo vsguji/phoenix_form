@@ -5,6 +5,7 @@ import 'package:phoenix_form/extension/form_total_config.dart';
 import '../../base/form_item_type.dart';
 import '../../base/input_item_interface.dart';
 import '../../config/form_config.dart';
+import '../../extension/form_assets.dart';
 import '../../utils/form_util.dart';
 
 ///
@@ -189,16 +190,16 @@ class StarsFormItemState extends State<StarsFormItem> {
 
   Image getStar(int index, int selectCount, int sum) {
     if (selectCount <= 0) {
-      return PhoenixTools.getAssetImage(BaseAsset.iconStarUnSelect,
+      return PhoenixTools.getAssetImage(FormAssets.iconStarUnSelect,
           package: 'phoenix_form');
     }
 
     if (index < selectCount) {
-      return PhoenixTools.getAssetImage(BaseAsset.iconStarSelect,
+      return PhoenixTools.getAssetImage(FormAssets.iconStarSelect,
           package: 'phoenix_form');
     }
 
-    return PhoenixTools.getAssetImage(BaseAsset.iconStarUnSelect,
+    return PhoenixTools.getAssetImage(FormAssets.iconStarUnSelect,
         package: 'phoenix_form');
   }
 }

@@ -6,6 +6,7 @@ import 'package:phoenix_base/phoenix.dart';
 import 'package:phoenix_form/extension/form_total_config.dart';
 
 import '../../config/form_config.dart';
+import '../../extension/form_assets.dart';
 import '../../utils/form_util.dart';
 
 /// A single-line [ListTile] with a trailing button that expands or collapses
@@ -125,10 +126,11 @@ class _ExpansionElementState extends State<ExpandableGroup>
 
     if (_isExpanded) {
       _arrowIcon = PhoenixTools.getAssetSizeImage(
-          BaseAsset.iconDownArrow, 12, 12,
+          FormAssets.iconDownArrow, 12, 12,
           package: 'phoenix_form');
     } else {
-      _arrowIcon = PhoenixTools.getAssetSizeImage(BaseAsset.iconUpArrow, 12, 12,
+      _arrowIcon = PhoenixTools.getAssetSizeImage(
+          FormAssets.iconUpArrow, 12, 12,
           package: 'phoenix_form');
     }
   }

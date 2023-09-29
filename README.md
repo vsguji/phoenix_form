@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# phoenix_form
-Flutter 企业级组件：Form
-=======
 <!--
  * @Author: lipeng 1162423147@qq.com
  * @Date: 2023-09-22 11:45:25
@@ -44,4 +40,4 @@ const like = 'sample';
 ## Additional information
 
 phoenix 将做为企业级基础组件:Form,提供项目支持。
->>>>>>> 9d29bce ([new] 新建)
+
